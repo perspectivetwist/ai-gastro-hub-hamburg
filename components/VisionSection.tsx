@@ -12,7 +12,7 @@ export default function VisionSection() {
         className="text-lg md:text-xl max-w-3xl mx-auto leading-relaxed"
         style={{ color: "#cccccc" }}
       >
-        In 24 Monaten empfehlen KI-Agenten Restaurants, buchen Tische und
+        In 12 Monaten empfehlen KI-Agenten Restaurants, buchen Tische und
         bewerten Erlebnisse. Wer heute handelt, bekommt die Gäste von morgen.
         Wer wartet, verliert sie an Restaurants, die KI verstanden haben.
       </p>
