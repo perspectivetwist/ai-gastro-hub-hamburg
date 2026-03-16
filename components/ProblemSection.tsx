@@ -6,9 +6,9 @@ export default function ProblemSection() {
       style={{ zIndex: 1 }}
     >
       <h2 className="text-3xl md:text-4xl font-bold mb-8">
-        KI empfiehlt täglich Restaurants.
+        KI verändert die Gastro-Branche.
         <br />
-        <span className="gradient-accent">Deins auch?</span>
+        <span className="gradient-accent">Ist dein Restaurant bereit?</span>
       </h2>
 
       <div className="space-y-6 mb-16 max-w-3xl">
@@ -23,15 +23,15 @@ export default function ProblemSection() {
           <p className="text-xl leading-relaxed pl-4" style={{ color: "#cccccc" }}>
             <span className="font-semibold" style={{ color: "#ffffff" }}>Morgen fragen sie ChatGPT:</span>
             <br />
-            &quot;Welches Restaurant in meiner Nähe hat die beste Pasta?&quot; — und KI entscheidet, wen sie empfiehlt.
+            &quot;Reservier mir einen Tisch, italienisch, Innenstadt, Freitagabend.&quot; — und KI entscheidet, wer gebucht wird.
           </p>
         </div>
         <div className="flex gap-0 rounded-lg overflow-hidden">
           <div className="w-1 flex-shrink-0" style={{ background: "linear-gradient(180deg, #FFB432, #FF3CAC)" }} />
           <p className="text-xl leading-relaxed pl-4" style={{ color: "#cccccc" }}>
-            <span className="font-semibold" style={{ color: "#ffffff" }}>70% der Restaurants sind unsichtbar</span>
+            <span className="font-semibold" style={{ color: "#ffffff" }}>Sichtbar sein reicht nicht.</span>
             <br />
-            für KI-Systeme. Die Gäste gehen zur Konkurrenz — ohne dass du es merkst.
+            Dein Restaurant muss für KI auch nutzbar und sicher sein — sonst fällt es durch das Raster.
           </p>
         </div>
       </div>
@@ -40,15 +40,15 @@ export default function ProblemSection() {
         {[
           {
             stat: "70%",
-            text: "der Restaurants sind für KI-Suchen komplett unsichtbar — ChatGPT kennt sie nicht",
+            text: "der Restaurants sind für KI-Systeme unsichtbar — ChatGPT, Gemini und Perplexity kennen sie nicht.",
           },
           {
             stat: "3x",
-            text: "mehr Nutzer fragen KI nach Restaurant-Empfehlungen als vor 12 Monaten",
+            text: "mehr Nutzer lassen KI-Agenten Tische buchen als vor 12 Monaten. Ohne Agent-Readiness kein Zugang.",
           },
           {
             stat: "+721%",
-            text: "Wachstum der KI-Suchplattformen in 12 Monaten. KI empfiehlt täglich Restaurants — ohne dich.",
+            text: "Wachstum der KI-Plattformen in 12 Monaten. Wer jetzt nicht ready ist, verliert den Anschluss.",
           },
         ].map((item, i) => (
           <div

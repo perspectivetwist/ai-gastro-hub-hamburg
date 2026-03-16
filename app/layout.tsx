@@ -5,14 +5,14 @@ import "./globals.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "KI-Sichtbarkeit für Restaurants | AI Shift Drift",
+  title: "AI-Readiness für Restaurants | AI Shift Drift",
   description:
-    "Kostenlose KI-Scanner für Restaurants: AEO, GEO, Agent-Readiness und Sicherheit. Jetzt prüfen ob ChatGPT dein Restaurant empfiehlt.",
+    "Ist dein Restaurant bereit für die KI-Ära? Kostenlose Scanner für Sichtbarkeit, Nutzbarkeit und Sicherheit. Jetzt prüfen.",
   robots: { index: true, follow: true },
   openGraph: {
-    title: "KI-Sichtbarkeit für Restaurants | AI Shift Drift",
+    title: "AI-Readiness für Restaurants | AI Shift Drift",
     description:
-      "Kostenlose KI-Scanner für Restaurants: AEO, GEO, Agent-Readiness und Sicherheit. Jetzt prüfen ob ChatGPT dein Restaurant empfiehlt.",
+      "Ist dein Restaurant bereit für die KI-Ära? Kostenlose Scanner für Sichtbarkeit, Nutzbarkeit und Sicherheit. Jetzt prüfen.",
     locale: "de_DE",
     url: "https://ai-gastro-hub.vercel.app",
   },

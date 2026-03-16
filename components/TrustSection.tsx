@@ -31,24 +31,6 @@ export default function TrustSection() {
       className="relative max-w-5xl mx-auto px-6 pb-16"
       style={{ zIndex: 1 }}
     >
-      {/* Trust Badges */}
-      <div className="flex flex-wrap items-center justify-center gap-6 py-12 mb-12">
-        {[
-          "DSGVO-konform",
-          "Keine Datenspeicherung",
-          "Made in Germany",
-        ].map((badge) => (
-          <div
-            key={badge}
-            className="flex items-center gap-2 text-xs"
-            style={{ color: "#888" }}
-          >
-            <span style={{ color: "#00FFE0" }}>✓</span>
-            {badge}
-          </div>
-        ))}
-      </div>
-
       <div
         className="border-t pt-12"
         style={{ borderColor: "rgba(255,255,255,0.07)" }}

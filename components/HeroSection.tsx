@@ -10,13 +10,13 @@ export default function HeroSection() {
           className="mb-14 text-sm tracking-widest uppercase"
           style={{ color: "#FFFFFF" }}
         >
-          KI-Sichtbarkeit für Restaurants
+          AI-Readiness für Restaurants
         </div>
 
         {/* Hook Headline */}
         <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6 max-w-4xl">
-          Ist dein Restaurant in der{" "}
-          <span className="gradient-accent">KI-Ära sichtbar?</span>
+          Ist dein Restaurant{" "}
+          <span className="gradient-accent">bereit für die KI-Ära?</span>
         </h1>
 
         {/* Sub */}
@@ -24,9 +24,9 @@ export default function HeroSection() {
           className="text-xl md:text-2xl mb-10 max-w-2xl mx-auto"
           style={{ color: "#cccccc" }}
         >
-          ChatGPT, Perplexity und Google AI empfehlen täglich Restaurants. Wer
-          nicht sichtbar ist, verliert Gäste an die Konkurrenz — ohne es zu
-          merken.
+          ChatGPT, Perplexity und Gemini empfehlen Restaurants, buchen Tische
+          und bewerten Erlebnisse. Wer nicht sichtbar, nutzbar und sicher ist,
+          verliert Gäste — ohne es zu merken.
         </p>
 
         {/* CTA */}

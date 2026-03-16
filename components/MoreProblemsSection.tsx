@@ -4,20 +4,20 @@ import type { LucideIcon } from "lucide-react";
 const problems: { icon: LucideIcon; title: string; text: string; color: string; gradient?: string }[] = [
   {
     icon: EyeOff,
-    title: "Gäste fragen ChatGPT statt Google.",
-    text: "\"Bestes italienisches Restaurant in München\" — ChatGPT antwortet sofort. Wenn dein Restaurant nicht in der Antwort ist, existierst du für diese Gäste nicht.",
+    title: "Nicht sichtbar für KI.",
+    text: "\"Bestes italienisches Restaurant in München\" — ChatGPT und Gemini antworten sofort. Wenn dein Restaurant nicht in der Antwort ist, existierst du für diese Gäste nicht.",
     color: "#00FFE0",
     gradient: "linear-gradient(180deg, #00AAFF, #00FF88)",
   },
   {
     icon: Ban,
-    title: "KI-Agenten buchen bald Tische.",
+    title: "Nicht nutzbar für KI-Agenten.",
     text: "Nutzer sagen: \"Reservier mir einen Tisch für Freitag, italienisch, Innenstadt.\" Der KI-Agent bucht — aber nur bei Restaurants, die digital buchbar und agent-ready sind.",
     color: "#FFE600",
   },
   {
     icon: ShieldAlert,
-    title: "Fake-Bewertungen bedrohen deinen Ruf.",
+    title: "Nicht sicher vor KI-Angriffen.",
     text: "KI kann massenhaft gefälschte Bewertungen erzeugen. Dein guter Ruf steht auf dem Spiel — und die meisten Gastronomen merken es zu spät.",
     color: "#FF1744",
   },
@@ -41,7 +41,7 @@ export default function MoreProblemsSection() {
       </svg>
 
       <h2 className="text-3xl md:text-4xl font-bold mb-12">
-        Was das für <span className="gradient-accent">dein Restaurant</span> konkret bedeutet.
+        Drei Probleme, <span className="gradient-accent">eine Lösung.</span>
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {problems.map((p, i) => {
