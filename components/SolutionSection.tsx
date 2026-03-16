@@ -1,3 +1,5 @@
+import { ChefHat, UtensilsCrossed, CookingPot } from "lucide-react";
+
 export default function SolutionSection() {
   return (
     <section
@@ -16,7 +18,7 @@ export default function SolutionSection() {
       >
         Nur sichtbar zu sein reicht nicht. Dein Restaurant muss für KI-Agenten
         auch buchbar und sicher sein. AI Shift Drift ist das erste Ökosystem das
-        alle drei Dimensionen zusammendenkt: Sichtbar. Nutzbar. Sicher.
+        alle drei Dimensionen zusammendenkt: Sichtbarkeit. Nutzbarkeit. Sicherheit.
       </p>
 
       {/* House Image + Labels */}
@@ -27,19 +29,22 @@ export default function SolutionSection() {
           className="max-w-[500px] w-full rounded-2xl"
         />
         <div className="hidden md:flex flex-col justify-between" style={{ height: "500px" }}>
-          <div>
-            <span style={{ color: "#FF0044" }} className="font-bold text-2xl">
-              Sicher
-            </span>
-          </div>
-          <div>
-            <span style={{ color: "#FFE600" }} className="font-bold text-2xl">
-              Nutzbar
-            </span>
-          </div>
-          <div>
+          <div className="flex items-center gap-3">
+            <ChefHat className="w-7 h-7" style={{ color: "#00AAFF" }} />
             <span className="font-bold text-2xl gradient-wake">
-              Sichtbar
+              Sichtbarkeit
+            </span>
+          </div>
+          <div className="flex items-center gap-3">
+            <UtensilsCrossed className="w-7 h-7" style={{ color: "#FFE600" }} />
+            <span style={{ color: "#FFE600" }} className="font-bold text-2xl">
+              Nutzbarkeit
+            </span>
+          </div>
+          <div className="flex items-center gap-3">
+            <CookingPot className="w-7 h-7" style={{ color: "#FF0044" }} />
+            <span style={{ color: "#FF0044" }} className="font-bold text-2xl">
+              Sicherheit
             </span>
           </div>
         </div>
