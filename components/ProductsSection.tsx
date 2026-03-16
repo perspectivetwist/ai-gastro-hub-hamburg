@@ -178,12 +178,18 @@ export default function ProductsSection() {
         </div>
       </div>
 
-      {/* Jellyfish Background Image */}
+      {/* Ramen Background Image */}
       <img
         src="/images/jellyfish-hero.png"
         alt=""
-        className="hidden md:block absolute top-1/2 -translate-y-1/2 right-0 translate-x-1/4 w-[420px]"
-        style={{ opacity: 0.8, zIndex: 0, pointerEvents: "none" }}
+        className="hidden md:block absolute top-1/2 -translate-y-1/2 right-0 translate-x-[10%] w-[400px] rounded-3xl"
+        style={{
+          opacity: 0.7,
+          zIndex: 0,
+          pointerEvents: "none",
+          maskImage: "radial-gradient(ellipse at center, black 40%, transparent 75%)",
+          WebkitMaskImage: "radial-gradient(ellipse at center, black 40%, transparent 75%)",
+        }}
       />
     </section>
   );
