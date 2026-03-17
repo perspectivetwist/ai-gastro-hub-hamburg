@@ -31,7 +31,7 @@ export default function Datenschutz() {
         <div>
           <h2 className="font-bold mb-2 text-white">Datenverarbeitung</h2>
           <p>
-            ASD – AI Shift Drift speichert keine personenbezogenen Daten auf
+            ASD - AI Shift Drift speichert keine personenbezogenen Daten auf
             unseren Servern. Die Landing Page ist eine reine
             Informationsseite ohne Formulare, Logins oder Datenerfassung.
           </p>
@@ -85,7 +85,7 @@ export default function Datenschutz() {
       </div>
 
       <div className="mt-12 text-xs" style={{ color: "#444" }}>
-        © 2026 ASD – AI Shift Drift
+        © 2026 ASD - AI Shift Drift
       </div>
     </section>
   );

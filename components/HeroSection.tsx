@@ -25,7 +25,7 @@ export default function HeroSection() {
           style={{ color: "#cccccc" }}
         >
           Pr&uuml;fe Sichtbarkeit, Reputation, Agent-Readiness und Sicherheit
-          deines Restaurants in der KI-&Auml;ra &mdash; kostenlos und in 60 Sekunden.
+          deines Restaurants in der KI-&Auml;ra, kostenlos und in 60 Sekunden.
         </p>
 
         {/* CTA */}

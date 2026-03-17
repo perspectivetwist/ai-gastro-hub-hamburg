@@ -48,7 +48,7 @@ export default function Impressum() {
       </div>
 
       <div className="mt-12 text-xs" style={{ color: "#444" }}>
-        © 2026 ASD – AI Shift Drift
+        © 2026 ASD - AI Shift Drift
       </div>
     </section>
   );

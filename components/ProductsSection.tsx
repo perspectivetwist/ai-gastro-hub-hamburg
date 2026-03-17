@@ -182,7 +182,7 @@ export default function ProductsSection() {
       <img
         src="/images/jellyfish-hero.png"
         alt=""
-        className="hidden md:block absolute top-[55%] -translate-y-1/2 right-0 translate-x-[10%] w-[400px] rounded-3xl"
+        className="hidden md:block absolute top-[72%] -translate-y-1/2 right-0 translate-x-[10%] w-[400px] rounded-3xl"
         style={{
           opacity: 0.7,
           zIndex: 0,
