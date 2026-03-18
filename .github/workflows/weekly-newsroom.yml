@@ -84,8 +84,27 @@ jobs:
               { ... },
               { ... }
             ],
-            "handlungsempfehlung": "Eine konkrete Aufgabe die man diese Woche erledigen kann. Max. 30 Minuten. 2 Sätze."
+            "handlungsempfehlung": "Eine konkrete Aufgabe die man diese Woche erledigen kann. Max. 30 Minuten. 2 Sätze.",
+            "seo": {
+              "title": "[Headline max 60 Zeichen] | KI-Gastro-Newsroom KW ${kw} ${year}",
+              "metaDescription": "KW ${kw} ${year}: [Was passiert -- max 100 Zeichen]. Kostenloser KI-Check für dein Restaurant.",
+              "keywords": "KI Gastronomie, KI Restaurant Deutschland, [2-3 weitere relevante Keywords aus dem Artikel]",
+              "canonicalUrl": "https://ai-gastro-hub.vercel.app/newsroom/kw-${kw}-${year}",
+              "datePublished": "${new Date().toISOString()}",
+              "internalLinks": [
+                {
+                  "url": "[passender Scanner-URL -- siehe Logik unten]",
+                  "text": "[passender CTA-Text]"
+                }
+              ]
+            }
           }
+
+          Scanner-URL Logik für internalLinks (1-2 passende Links wählen):
+          - Sichtbarkeit/ChatGPT findet Restaurant: https://aeo-gastro.vercel.app + "Prüfe kostenlos ob ChatGPT dein Restaurant findet"
+          - Bewertungen/Reputation: https://geo-gastro.vercel.app + "Kostenloser KI-Reputations-Check"
+          - Bestellsysteme/Agent-Payments: https://agentready-gastro.vercel.app + "Prüfe ob KI-Agenten bei dir buchen können"
+          - Sicherheit/Fake-Reviews: https://aisecurity-gastro.vercel.app + "Kostenloser KI-Sicherheits-Check"
 
           Genau 3 News-Items. Nur JSON zurückgeben.`;
 

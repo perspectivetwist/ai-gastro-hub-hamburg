@@ -13,9 +13,26 @@ function getArticle(slug: string) {
 
 export async function generateMetadata({ params }: { params: { slug: string } }): Promise<Metadata> {
   const data = getArticle(params.slug)
+  if (!data) return { title: 'KI-Gastro-Newsroom' }
+
+  const seo = data.seo || {}
+
   return {
-    title: data ? `${data.headline} | KI-Gastro-Newsroom KW ${data.kw}` : 'KI-Gastro-Newsroom',
-    description: data ? `KW ${data.kw} ${data.year}: ${data.headline}` : '',
+    title: seo.title || `${data.headline} | KI-Gastro-Newsroom KW ${data.kw} ${data.year}`,
+    description: seo.metaDescription || `KW ${data.kw} ${data.year}: ${data.headline}`,
+    keywords: seo.keywords || 'KI Gastronomie, KI Restaurant Deutschland, ChatGPT Restaurant',
+    alternates: {
+      canonical: seo.canonicalUrl || `https://ai-gastro-hub.vercel.app/newsroom/${params.slug}`,
+    },
+    openGraph: {
+      title: seo.title || data.headline,
+      description: seo.metaDescription || data.headline,
+      url: seo.canonicalUrl || `https://ai-gastro-hub.vercel.app/newsroom/${params.slug}`,
+      siteName: 'KI-Gastro-Newsroom — AI Shift Drift',
+      locale: 'de_DE',
+      type: 'article',
+      publishedTime: data.seo?.datePublished || data.generatedAt,
+    },
   }
 }
 
@@ -35,6 +52,36 @@ export default function NewsroomArticle({ params }: { params: { slug: string } }
         <span className="text-gray-600 text-sm">›</span>
         <span className="text-sm text-gray-500">KW {data.kw} · {data.date}</span>
       </div>
+
+      {/* NewsArticle JSON-LD Schema */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "NewsArticle",
+            "headline": data.headline,
+            "datePublished": data.seo?.datePublished || data.generatedAt,
+            "dateModified": data.generatedAt,
+            "author": {
+              "@type": "Organization",
+              "name": "AI Shift Drift",
+              "url": "https://ai-gastro-hub.vercel.app"
+            },
+            "publisher": {
+              "@type": "Organization",
+              "name": "AI Shift Drift — KI-Gastro-Newsroom",
+              "url": "https://ai-gastro-hub.vercel.app/newsroom"
+            },
+            "description": data.seo?.metaDescription || data.headline,
+            "keywords": data.seo?.keywords || "KI Gastronomie, KI Restaurant Deutschland",
+            "mainEntityOfPage": {
+              "@type": "WebPage",
+              "@id": data.seo?.canonicalUrl || `https://ai-gastro-hub.vercel.app/newsroom/${params.slug}`
+            }
+          })
+        }}
+      />
 
       <h1 className="text-3xl font-bold text-white mb-12 leading-tight">
         {data.headline}
@@ -69,6 +116,26 @@ export default function NewsroomArticle({ params }: { params: { slug: string } }
         <p className="text-xs text-yellow-400 uppercase tracking-wider mb-3">💡 Deine Aufgabe diese Woche</p>
         <p className="text-white text-sm leading-relaxed">{data.handlungsempfehlung}</p>
       </div>
+
+      {/* Internal Links */}
+      {data.seo?.internalLinks && data.seo.internalLinks.length > 0 && (
+        <div className="border-t border-white/10 pt-8 mb-8">
+          <p className="text-xs text-gray-500 uppercase tracking-wider mb-4">
+            Passender kostenloser Scanner
+          </p>
+          <div className="space-y-2">
+            {data.seo.internalLinks.map((link: { url: string; text: string }, i: number) => (
+              <a
+                key={i}
+                href={link.url}
+                className="block text-sm text-indigo-400 hover:text-indigo-300 transition"
+              >
+                {link.text}
+              </a>
+            ))}
+          </div>
+        </div>
+      )}
 
       {/* CTA */}
       <div className="bg-white/5 rounded-xl p-8 text-center">
