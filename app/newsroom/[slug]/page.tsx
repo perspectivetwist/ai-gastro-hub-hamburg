@@ -52,7 +52,7 @@ export default function NewsroomArticle({ params }: { params: { slug: string } }
         KI + Gastronomie diese Woche
       </h2>
       <div className="space-y-4 mb-12">
-        {data.news.map((item: any, i: number) => (
+        {data.news.map((item: { titel: string; was_passiert: string; was_bedeutet_das: string }, i: number) => (
           <div key={i} className="bg-white/5 border border-white/10 rounded-xl p-6">
             <h3 className="font-bold text-white mb-3">▸ {item.titel}</h3>
             <p className="text-gray-400 text-sm mb-4">{item.was_passiert}</p>

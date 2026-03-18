@@ -3,7 +3,7 @@ import path from 'path'
 import Link from 'next/link'
 
 export default function NewsroomOverview() {
-  let articles: any[] = []
+  let articles: { slug: string; kw: number; year: number; date: string; headline: string }[] = []
   try {
     const dir = path.join(process.cwd(), 'public', 'newsroom')
     const files = fs.readdirSync(dir).filter(f => f.endsWith('.json'))
