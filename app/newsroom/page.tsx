@@ -22,7 +22,7 @@ export default function NewsroomOverview() {
         />
         <h1 className="text-3xl font-bold text-white">KI-Insider für Gastro. Jeden Montag.</h1>
       </div>
-      <p className="text-gray-400 mb-12 text-sm">
+      <p className="text-gray-400 mb-12 text-base" style={{ marginLeft: '56px' }}>
         Wer das nicht liest, erfährt es von der Konkurrenz.
       </p>
 
