@@ -18,11 +18,15 @@ export default function SolutionSection() {
       </p>
 
       {/* House Image + Labels */}
-      <div className="flex flex-col md:flex-row items-center gap-12 w-full max-w-[800px] mx-auto">
+      <div className="flex flex-col md:flex-row items-center gap-12 w-full max-w-[800px] mx-auto -mt-4">
         <img
           src="/images/asd-house.png"
           alt="AI Shift Drift Dimensionen"
           className="max-w-[500px] w-full rounded-2xl"
+          style={{
+            maskImage: "radial-gradient(ellipse at center, black 50%, transparent 80%)",
+            WebkitMaskImage: "radial-gradient(ellipse at center, black 50%, transparent 80%)",
+          }}
         />
         <div className="hidden md:flex flex-col justify-between" style={{ height: "500px" }}>
           <div className="flex items-center gap-3">
