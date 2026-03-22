@@ -8,16 +8,16 @@ const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   verification: { other: { 'msvalidate.01': '4238BAC83D0A84184DB5C8AEF5C3CE14' } },
-  title: "AI-Readiness für die Gastronomie | AI Shift Drift",
+  title: "AI-Readiness für die Hamburger Gastronomie | AI Shift Drift",
   description:
-    "Ist dein Restaurant bereit für die KI-Ära? Kostenlose Scanner für Sichtbarkeit, Nutzbarkeit und Sicherheit. Jetzt prüfen.",
+    "4 kostenlose KI-Scanner für Gastronomiebetriebe in Hamburg. Sichtbarkeit, Reputation, Agent-Readiness und Sicherheit — kostenlos prüfen.",
   robots: { index: true, follow: true },
   openGraph: {
-    title: "AI-Readiness für die Gastronomie | AI Shift Drift",
+    title: "AI-Readiness für die Hamburger Gastronomie | AI Shift Drift",
     description:
-      "Ist dein Restaurant bereit für die KI-Ära? Kostenlose Scanner für Sichtbarkeit, Nutzbarkeit und Sicherheit. Jetzt prüfen.",
+      "4 kostenlose KI-Scanner für Gastronomiebetriebe in Hamburg. Sichtbarkeit, Reputation, Agent-Readiness und Sicherheit — kostenlos prüfen.",
     locale: "de_DE",
-    url: "https://ai-gastro-hub.vercel.app",
+    url: "https://ai-gastro-hub-hamburg.vercel.app",
   },
 };
 
@@ -39,8 +39,8 @@ export default function RootLayout({
               "@type": "Organization",
               "name": "AI Shift Drift",
               "alternateName": "ASD",
-              "url": "https://ai-gastro-hub.vercel.app",
-              "logo": "https://ai-gastro-hub.vercel.app/logo.png",
+              "url": "https://ai-gastro-hub-hamburg.vercel.app",
+              "logo": "https://ai-gastro-hub-hamburg.vercel.app/logo.png",
               "description": "Kostenlose KI-Readiness-Scanner f\u00fcr deutsche Restaurants und KMUs. Pr\u00fcft ob KI-Systeme dein Unternehmen finden, empfehlen und ob es nutzbar f\u00fcr KI-Agenten ist.",
               "foundingDate": "2026",
               "foundingLocation": {

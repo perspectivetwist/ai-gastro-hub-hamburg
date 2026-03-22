@@ -100,6 +100,20 @@ export default function TrustSection() {
           </div>
         </div>
 
+        {/* Städte */}
+        <div className="flex flex-wrap gap-x-4 gap-y-2 justify-center mb-6 text-sm">
+          <a href="https://ai-gastro-hub-berlin.vercel.app" className="hover:underline" style={{ color: "#888" }}>Berlin</a>
+          <a href="https://ai-gastro-hub-hamburg.vercel.app" className="hover:underline" style={{ color: "#888" }}>Hamburg</a>
+          <a href="https://ai-gastro-hub-muenchen.vercel.app" className="hover:underline" style={{ color: "#888" }}>München</a>
+          <a href="https://ai-gastro-hub-koeln.vercel.app" className="hover:underline" style={{ color: "#888" }}>Köln</a>
+          <a href="https://ai-gastro-hub-frankfurt.vercel.app" className="hover:underline" style={{ color: "#888" }}>Frankfurt</a>
+          <a href="https://ai-gastro-hub-stuttgart.vercel.app" className="hover:underline" style={{ color: "#888" }}>Stuttgart</a>
+          <a href="https://ai-gastro-hub-duesseldorf.vercel.app" className="hover:underline" style={{ color: "#888" }}>Düsseldorf</a>
+          <a href="https://ai-gastro-hub-leipzig.vercel.app" className="hover:underline" style={{ color: "#888" }}>Leipzig</a>
+          <a href="https://ai-gastro-hub-dortmund.vercel.app" className="hover:underline" style={{ color: "#888" }}>Dortmund</a>
+          <a href="https://ai-gastro-hub-mannheim.vercel.app" className="hover:underline" style={{ color: "#888" }}>Mannheim</a>
+        </div>
+
         {/* Legal */}
         <div className="flex flex-col md:flex-row justify-between gap-8">
           <div className="flex gap-6">

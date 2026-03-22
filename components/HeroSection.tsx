@@ -1,3 +1,4 @@
+import CityIcon from "@/components/CityIcon";
 export default function HeroSection() {
   return (
     <section
@@ -5,18 +6,19 @@ export default function HeroSection() {
       style={{ zIndex: 1 }}
     >
       <div className="relative">
+        <CityIcon city="hamburg" />
         {/* Eyebrow */}
         <div
           className="mb-14 text-sm tracking-widest uppercase"
           style={{ color: "#FFFFFF" }}
         >
-          AI-Readiness für die Gastronomie
+          AI-Readiness für die Hamburger Gastronomie
         </div>
 
         {/* Hook Headline */}
         <h1 className="text-4xl md:text-6xl font-bold leading-tight mb-6 max-w-4xl">
           4 kostenlose KI-Scanner{" "}
-          <span className="gradient-accent">f&uuml;r dein Restaurant</span>
+          <span className="gradient-accent">f&uuml;r dein Restaurant in Hamburg</span>
         </h1>
 
         {/* Sub */}
@@ -25,7 +27,7 @@ export default function HeroSection() {
           style={{ color: "#cccccc" }}
         >
           Pr&uuml;fe Sichtbarkeit, Reputation, Agent-Readiness und Sicherheit
-          deines Restaurants in der KI-&Auml;ra, kostenlos und in unter 30 Sekunden.
+          deines Restaurants in der KI-&Auml;ra, kostenlos und in unter 30 Sekunden — für Gastronomiebetriebe in Hamburg.
         </p>
 
         {/* CTA */}
