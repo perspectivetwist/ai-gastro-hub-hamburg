@@ -3,6 +3,12 @@
   "redirects": [
     {
       "source": "/(.*)",
+      "has": [
+        {
+          "type": "host",
+          "value": "ai-gastro-hub-hamburg.vercel.app"
+        }
+      ],
       "destination": "https://www.ki-gastronomie.com/staedte/hamburg/$1",
       "permanent": true
     }
